@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+}
+.navMenu{
+    background: black;
+    text-align: center;
+}
+.navMenu ul{
+    list-style: none;
+}
+.navMenu ul li {
+    display: inline-block;
+    padding: 12px 7px;
+}
+.navMenu ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navMenu ul li a:hover{
+    color: orange;
+}
+h1{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    position:relative;
+}
+h1::after {
+    right: 50%;
+    content: '';
+    position: absolute;
+    width: 163px;
+    height: 3px;
+    background: black;
+    top: 51px;
+    transform: translateX(50%);
+}
+
+/* ============================table style start here=============== */
+.tableData{
+    width: 1160px;
+    margin: 0 auto;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  thead{
+    background: #157347;
+    color: #fff;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  th, td{
+      text-align: center;
+  }
+/* ============================table style end here=============== */
+/* ============================button style start here=============== */
+.btn{
+    margin: 5px;
+    padding: 2px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-success{
+    background: #157347;
+    color: white;
+}
+.btn-danger{
+    background: #BB2D3B;
+    color: white;
+}
+.btn-success:hover{
+    background: #0b5030;
+    color: white;
+}
+.btn-danger:hover{
+    background: #811822;
+    color: white;
+}
+.create-btn{
+    float:right;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/* ============================button style end here=============== */
+/* ============================form-control style start here=============== */
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* ============================form-control style end here=============== */
+/* ============================Modal style start here=============== */
+
+/* The Modal (background) */
+
+.brand-form{
+    padding:0 120px 0 100px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    font-size: 47px;
+}
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  /* Modal Header */
+.modal-header {
+    padding: 2px 120px;
+    color: black;
+  }
+  
+  /* Modal Body */
+  .modal-body {padding: 2px 16px;}
+  
+  /* Modal Footer */
+  .modal-footer {
+    padding: 4px 16px;
+    background-color: black;
+    /* color: white;  */
+    text-align: right;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    padding-bottom: 20px;
+}
+  
+  /* Add Animation */
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+
+/* ============================Modal style end here=============== */
+
+
+/* ============CreateBrand Form Input fields  style start here================*/
+#name {
+    width: 94% !important;
+    margin: 10px 0;
+}
+#submit{
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.is_invalid {
+        border-color: #dc3545;
+        padding-right: calc(1.5em + .75rem);
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: right calc(.375em + .1875rem) center;
+        background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+    }
+
+/* ============CreateBrand Form Input fields  style end here================*/
+
+/* ========================alert model style===================== */
+#successAlert{
+    text-align: center;
+}
+
